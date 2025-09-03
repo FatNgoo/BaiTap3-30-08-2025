@@ -1,7 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>Bai3</groupId>
@@ -11,7 +10,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <!-- ⚠️ Java 24 chưa chính thức, nên dùng 17 hoặc 21 (LTS) -->
+
     <maven.compiler.source>24</maven.compiler.source>
     <maven.compiler.target>24</maven.compiler.target>
   </properties>
@@ -24,8 +23,15 @@
       <version>6.1.0</version>
       <scope>provided</scope>
     </dependency>
+    <!-- Thêm block 6.0.0 để giống bạn của bạn -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.0</version>
+      <scope>provided</scope>
+    </dependency>
 
-    <!-- JSP API (cần cho PageContext, scope=provided vì Tomcat sẽ có) -->
+    <!-- JSP API -->
     <dependency>
       <groupId>jakarta.servlet.jsp</groupId>
       <artifactId>jakarta.servlet.jsp-api</artifactId>
@@ -33,7 +39,7 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- JSTL (Jakarta EE 9+) -->
+    <!-- JSTL -->
     <dependency>
       <groupId>jakarta.servlet.jsp.jstl</groupId>
       <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
@@ -52,21 +58,21 @@
       <version>9.3.0</version>
     </dependency>
 
-    <!-- File Upload (cho upload ảnh) -->
+    <!-- File Upload (Jakarta compatible) -->
     <dependency>
-      <groupId>commons-fileupload</groupId>
-      <artifactId>commons-fileupload</artifactId>
-      <version>1.5</version>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-fileupload2-jakarta</artifactId>
+      <version>2.0.0-M1</version>
     </dependency>
 
-    <!-- Commons IO (hỗ trợ đọc/ghi file) -->
+    <!-- Commons IO -->
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
       <version>2.16.1</version>
     </dependency>
 
-    <!-- Logging (tuỳ chọn) -->
+    <!-- Logging (bạn vẫn có thể giữ lại nếu cần) -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>

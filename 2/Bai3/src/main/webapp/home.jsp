@@ -18,6 +18,12 @@
 <title>Trang chủ</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
 </head>
 <body class="bg-light">
     <%@ include file="topbar.jsp" %>
@@ -33,18 +39,19 @@
             <c:forEach items="${requestScope.categories}" var="c">
                 <div class="col-md-4 col-lg-3 mb-4">
                     <div class="card h-100 text-center shadow-sm">
+                        <c:if test="${not empty c.icon}">
+                            <img src="${pageContext.request.contextPath}/image?fname=${c.icon}" 
+                                 class="card-img-top" 
+                                 alt="${c.name}">
+                        </c:if>
+
                         <div class="card-body d-flex flex-column justify-content-center">
-                            <i class="${c.icon} fa-3x text-primary mb-3"></i>
                             <h5 class="card-title">${c.name}</h5>
-                            <a href="#" class="btn btn-outline-primary mt-auto">Xem sản phẩm</a>
                         </div>
                     </div>
                 </div>
             </c:forEach>
         </div>
-    </div>
-</body>
-</html>
     </div>
 </body>
 </html>

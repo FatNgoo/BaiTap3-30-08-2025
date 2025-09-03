@@ -1,10 +1,15 @@
 D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\CategoryAddController.java
+D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\CategoryController.java
 D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\CategoryDeleteController.java
+D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\CategoryEditController.java
 D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\CategoryListController.java
+D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\DownloadImageController.java
 D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\ForgotPasswordController.java
+D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\HomeController.java
 D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\LoginController.java
 D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\LogoutController.java
 D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\RegisterController.java
+D:\TuCodeKoAnhTai\Bai3\src\main\java\controller\WaitingController.java
 D:\TuCodeKoAnhTai\Bai3\src\main\java\dao\CategoryDAO.java
 D:\TuCodeKoAnhTai\Bai3\src\main\java\dao\CategoryDAOImpl.java
 D:\TuCodeKoAnhTai\Bai3\src\main\java\dao\ForgotPasswordDAO.java
